@@ -1,0 +1,694 @@
+/* =========================================================================
+   LEITURA COMENTADA - css/style.css (ENTREGA DA EQUIPE)
+   Comentários da aula marcados com [BOM] / [MELHORAR] / [PROBLEMA].
+   O CSS funciona e o visual ficou bonito; os pontos abaixo são de qualidade
+   de código e de responsividade, não de "está quebrado".
+   ========================================================================= */
+
+/* [MELHORAR] Reset mínimo (zera margin/padding de tudo). Falta o
+   box-sizing: border-box aqui no reset global - ele só aparece lá embaixo,
+   dentro do @media do celular. Sem ele no desktop, padding + width se somam e
+   podem estourar a largura dos elementos. */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #323232;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0px;
+    background-color: #f65be724;
+    box-shadow: 0 4px 6px rgba(244, 150, 217, 0.07);
+
+}
+
+.cabecalho h1 {
+    color: #ff1ce8;
+    text-shadow: 0 4px 6px rgb(251, 0, 255, 0.3);
+}
+
+.cabecalho nav ul {
+    text-decoration: none;
+    color: #323232;
+    cursor: pointer;
+    padding: 0px 10px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: initial;
+}
+
+.cabecalho nav a {
+    text-decoration: none;
+    color: #323232;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+.cabecalho nav a:hover {
+    color: #ff1ce8;
+
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f65be724;
+
+}
+
+.hero div {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    width: 47%;
+    gap: 40px;
+    margin-left: 20px;
+
+
+}
+
+.hero div h2 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero div h2 span {
+    display: inline-block;
+    font-size: 35px;
+    color: #4e4e4e;
+}
+
+.hero div p {
+    color: #8f8f8f;
+    font-size: 20px;
+
+}
+
+.hero div #btn_whatsapp {
+    background-color: #50c750;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 0;
+    font-size: 15px;
+    width: 45%;
+    text-align: center;
+
+}
+
+.hero div #btn_whatsapp:hover {
+    color: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+    background-color: #289c28;
+
+}
+
+.hero img {
+    margin: 100px 20px 100px;
+    width: 500px;
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+.features h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.features div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.features .features-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.features .features-card h3 {
+    font-size: 20px;
+}
+
+.features .features-card p {
+    color: #8f8f8f;
+    font-size: 14px;
+    width: 80%;
+}
+
+.features .features-card:hover {
+    background-color: #ffbbf851;
+    border-radius: 20px;
+}
+
+.features .icone {
+    color: #ff1ce8;
+    background-color: #f65be724;
+    font-size: 40px;
+    padding: 20px 16px;
+    border-radius: 100px;
+}
+
+.produtos {
+    width: 100%;
+
+}
+
+.produtos h2 {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 100px;
+    font-size: 30px;
+}
+
+.produtos .subtitulo {
+    display: flex;
+    justify-content: center;
+    color: #8f8f8f;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.produtos div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+
+}
+
+.produtos div p {
+    width: 85%;
+}
+
+.produtos div .produto_cards {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 30%;
+    gap: 15px;
+    margin: 0px 15px;
+
+}
+
+.produtos div .produto_cards:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    border-radius: 20px;
+}
+
+.produtos div img {
+    width: 60%;
+    border-radius: 20px;
+
+}
+
+.produtos div a {
+    background-color: #ef1bda;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    border: 0;
+    width: 80%;
+    text-align: center;
+}
+
+.produtos div a:hover {
+    background-color: #c031b2;
+}
+
+.avaliacoes h2 {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-top: 100px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.avaliacoes .subtitulo {
+    display: flex;
+    justify-content: center;
+    color: #8f8f8f;
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.avaliacoes div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.avaliacoes div .avaliacao {
+    padding: 20px;
+    width: 30%;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.avaliacoes div .avaliacao:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+}
+
+
+.avaliacoes .estrelas {
+    color: rgb(233, 233, 43);
+}
+
+footer {
+    background-color: #ef1bda;
+    margin-top: 100px;
+    color: #FFFFFF;
+}
+
+footer .final {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+
+}
+
+footer .sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+}
+
+footer .contato {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    width: 30%;
+
+}
+
+footer #creditos {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+
+}
+
+footer #btn_contato {
+    color: #ef1bda;
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+footer #btn_contato:hover {
+    background-color: #ffe2f5;
+}
+
+#pesquisar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    gap: 10px;
+
+}
+
+#busca {
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffd6fb87;
+    border: 0;
+}
+
+#contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#categoria {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffd6fb87;
+    border: 0;
+    cursor: pointer;
+}
+
+#catalogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#catalogo .card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 45px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
+}
+
+#catalogo .card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+
+}
+
+.card img {
+    width: 80%;
+    border-radius: 10px;
+    height: 265px;
+}
+
+#catalogo .card h3 {
+    font-size: 25px;
+    width: 90%;
+    font-weight: 600;
+}
+
+#catalogo .card p {
+    width: 90%;
+    color: #8f8f8f;
+}
+
+#catalogo .card .preco {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#catalogo .card a {
+    color: #ffffff;
+    background-color: #ef1bda;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+#catalogo .card a:hover {
+    background-color: #a11972;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.paginacao button {
+    color: #ffffff;
+    background-color: #ef1bda;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.paginacao button:hover {
+    background-color: #a11972;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+#contato h2 {
+    margin-bottom: 50px;
+}
+
+#informacoes {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffcffa48;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 16px;
+    padding: 10px;
+}
+
+#informacoes label {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#informacoes input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffd6fb86;
+    border: none;
+}
+
+#informacoes #aviso-cep {
+    padding: 0px;
+}
+
+#informacoes button {
+    color: #ffffff;
+    background-color: #ef1bda;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+#informacoes button:hover {
+    background-color: #b816a8;
+}
+
+
+
+
+/* [BOM] Existe media query para celular (abaixo de 767px) - a responsividade
+   foi o ponto alto da entrega. [MELHORAR] Faltaria um breakpoint intermediário
+   (tablet, ~1024px). */
+@media (max-width: 767px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .cabecalho nav a {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        padding: 30px 15px;
+        gap: 25px;
+    }
+
+    .hero div {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero div h2 {
+        font-size: 28px;
+    }
+
+    .hero div #btn_whatsapp {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .hero img {
+        margin: 20px 0;
+        width: 85%;
+        max-width: 300px;
+    }
+
+    .features h2 {
+        font-size: 24px;
+        margin: 40px 15px 20px;
+    }
+
+    .features>div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features .feature-card p {
+        width: 100%;
+    }
+
+.produtos {
+    width: 100%;
+}
+
+    .produtos h2 {
+        width: 100%;
+        font-size: 26px;
+        margin-top: 50px;
+    }
+
+    .produtos .subtitulo {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .produtos div {
+        width: 100%;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .produto_cards {
+        width: 100%;
+        margin: 0, auto;
+        padding: 0;
+        font-size: auto;
+        text-align: center;
+    }
+
+    .produtos div p {
+        width: auto;
+        font-size: auto;
+        display: flex;
+        
+
+    }
+
+    .produtos div img {
+        width: 150%;
+    }
+
+    .produtos div a {
+        width: auto;
+        font-size: 12px;
+    }
+
+    .avaliacoes h3 {
+        font-size: 26px;
+        margin-top: 50px;
+    }
+
+    .avaliacoes .subtitulo {
+        margin-bottom: 30px;
+    }
+
+    .avaliacoes>div {
+        flex-direction: column;
+    }
+
+    .avaliacoes div .avaliacao {
+        width: 90%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    footer {
+        margin-top: 60px;
+    }
+
+    footer .final {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    footer .sobre,
+    footer .contato {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer #btn_contato {
+        width: 100%;
+    }
+
+    #pesquisar {
+        flex-direction: column;
+        margin: 30px 15px;
+        gap: 15px;
+    }
+
+    #busca,
+    #categoria {
+        width: 90%;
+    }
+
+    #catalogo .card {
+        width: 40%;
+        margin: 15px auto;
+    }
+
+    #informacoes {
+        width: 60%;
+    }
+}
