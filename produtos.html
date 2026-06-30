@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo da Soul Crochê</title>
+
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>Soul Crochê</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Catálogo</a></li>
+                <li><a href="contato.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="pesquisar">
+        <input type="text" id="busca" placeholder="Buscar...">
+        <select id="categoria">
+            <option value="todas">Todas</option>
+        </select>
+    </section>
+
+    <p id="contador"></p>
+
+    <section id="catalogo" class="catalogo"></section>
+
+    <section class="paginacao">
+        <button id="btnanterior">Anterior</button>
+        <p id="numerodapagina">Página: <span id="numeropagina">1</span></p>
+        <button id="btnproximo">Próximo</button>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/55564781ee.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da Soul Crochê</title>
+    <link rel= "icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1>Soul Crochê</h1>
+        <nav>
+            <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Catálogo</a></li>
+            <li><a href="contato.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contato">
+        <h2>Preencha seu Cadastro</h2>
+
+        <form id="informacoes">
+            <label>Nome:
+                <input name="nome" type="text" id="nome" placeholder="Nome completo" /></label><br />
+            <label>Telefone:
+                <input name="telefone" type="text" id="telefone" placeholder="Número para contato" /></label><br />
+            <label>E-mail:
+                <input name="email" type="email" id="email" placeholder="E-mail para contato" /></label><br />
+            <label>Cep:
+                <input name="cep" type="text" id="cep" placeholder="01001-000" maxlength="9" /></label><br />
+
+            <p id="aviso-cep"></p>
+
+            <label>Rua:
+                <input name="rua" type="text" id="rua" placeholder="Preenchido pelo CEP" readonly /></label><br />
+            <label>Bairro:
+                <input name="bairro" type="text" id="bairro" placeholder="Preenchido pelo CEP" readonly /></label><br />
+            <label>Cidade:
+                <input name="cidade" type="text" id="cidade" placeholder="Preenchido pelo CEP" readonly /></label><br />
+            <label>Estado:
+                <input name="uf" type="text" id="uf" placeholder="UF" readonly /></label><br />
+            <label>Número:
+                <input name="numero" type="text" id="numero" placeholder="Número da residência" /></label><br />
+            <label>Mensagem:
+                <textarea name="mensagem" id="mensagem" placeholder="Escreva sua mensagem"></textarea></label><br />
+            <button id="btnsubmit" type="submit">Cadastrar</button>
+        </form>
+
+        <p id="mensagem-enviada"></p>
+
+    </section>
+
+    <script src="js/contato.js"></script>
+    <script src="https://kit.fontawesome.com/55564781ee.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

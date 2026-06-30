@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nome": "Cropped Neon",
+    "categoria": "Categoria B",
+    "preco": 139.99,
+    "descricao": "Cropped feito em linha 100% algodão reciclável.",
+    "imagem": "blusa_amarela.jpg"
+  },
+  {
+    "id": 2,
+    "nome": "Trilho de mesa",
+    "categoria": "Categoria C",
+    "preco": 159.99,
+    "descricao": "Trilho de mesa feito em linha 100% algodão reciclável.",
+    "imagem": "centro_de_mesa.jpg"
+  },
+  {
+    "id": 3,
+    "nome": "Blusa multicollor",
+    "categoria": "Categoria B",
+    "preco": 349.99,
+    "descricao": "Blusa feita em linha 100% algodão reciclável.",
+    "imagem": "blusa_colorida.jpg"
+  },
+  {
+    "id": 4,
+    "nome": "Brinco Flor",
+    "categoria": "Categoria A",
+    "preco": 9.99,
+    "descricao": "Brincos feito em linha 100% algodão reciclável e anzol em aço inoxidável.",
+    "imagem": "brincos.jpg"
+  },
+  {
+    "id": 5,
+    "nome": "Colares",
+    "categoria": "Categoria A",
+    "preco": 39.99,
+    "descricao": "Colar feito em linha 100% algodão reciclável e argola em madeira.",
+    "imagem": "colares.jpg"
+  },
+  {
+    "id": 6,
+    "nome": "Bolsa",
+    "categoria": "Categoria A",
+    "preco": 129.99,
+    "descricao": "Bolsa feita em linha 100% algodão reciclável e alça em couro.",
+    "imagem": "bolsa.webp"
+  }
+]
